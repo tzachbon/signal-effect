@@ -1,0 +1,42 @@
+{
+  "name": "signal-effect",
+  "version": "0.0.1",
+  "description": "Simple Effect method based on the tc39/proposal-signals",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.mjs",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "import": {
+      "types": "./dist/es/index.d.mts",
+      "default": "./dist/es/index.mjs"
+    },
+    "require": {
+      "types": "./dist/cjs/index.d.ts",
+      "default": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "watch": "bunchee -w",
+    "build": "bunchee"
+  },
+  "keywords": [
+    "signal",
+    "effect",
+    "tc39",
+    "proposal"
+  ],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "signal-polyfill": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "bunchee": "^5.1.2",
+    "signal-polyfill": "^0.1.0",
+    "typescript": "^5.4.5"
+  }
+}
