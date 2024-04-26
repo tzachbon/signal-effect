@@ -20,12 +20,16 @@ function handleWatchEmitted(): () => void {
   };
 }
 
-type DisposeCallback = () => void | void;
+type DisposeCallback = (() => void) | void;
 
 export function effect(callback: () => DisposeCallback): () => void {
   let disposeCallback: DisposeCallback;
+
   const computedSignal = new Signal.Computed(() => {
-    disposeCallback?.();
+    if (typeof disposeCallback === 'function') {
+      disposeCallback();
+    }
+
     disposeCallback = callback();
   });
 
@@ -33,7 +37,10 @@ export function effect(callback: () => DisposeCallback): () => void {
   computedSignal.get();
 
   return () => {
-    disposeCallback?.();
+    if (typeof disposeCallback === 'function') {
+      disposeCallback();
+    }
+
     watcher.unwatch(computedSignal);
   };
 }

@@ -22,6 +22,5 @@
     "esModuleInterop": true,
     "moduleResolution": "Bundler"
   },
-  "include": ["src"],
-  "exclude": ["**/*.test.ts"]
+  "include": ["src"]
 }

@@ -2,9 +2,10 @@
   "name": "signal-effect",
   "version": "0.0.1",
   "description": "Simple Effect method based on the tc39/proposal-signals",
+  "sideEffects": false,
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.mjs",
-  "sideEffects": false,
+  "types": "dist/es/index.d.mts",
   "files": [
     "dist"
   ],
@@ -19,9 +20,10 @@
     }
   },
   "scripts": {
-    "watch": "bunchee -w",
     "build": "bunchee",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:watch": "npm run build -- -w",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
   },
   "keywords": [
     "signal",
@@ -49,7 +51,9 @@
   "devDependencies": {
     "@types/node": "^20.12.7",
     "bunchee": "^5.1.2",
+    "jsdom": "^24.0.0",
     "signal-polyfill": "^0.1.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.2"
   }
 }
