@@ -20,7 +20,8 @@
   },
   "scripts": {
     "watch": "bunchee -w",
-    "build": "bunchee"
+    "build": "bunchee",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "signal",
