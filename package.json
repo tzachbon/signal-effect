@@ -40,7 +40,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/tzachbon/signal-effect"
+    "url": "git://github.com/tzachbon/signal-effect.git"
   },
   "homepage": "https://tzachbon.github.io/signal-effect/",
   "bugs": {
