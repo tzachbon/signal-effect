@@ -35,10 +35,13 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      - name: Install dependencies
+      - name: Install library dependencies
         run: npm ci
       - name: Build Library
         run: npm run build
+
+      - name: Install example dependencies
+        run: cd examples/counter-web-app && npm ci
       - name: Build Examples
         run: npm run build:examples:counter-web-app
       - name: Setup Pages
