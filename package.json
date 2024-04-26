@@ -20,7 +20,6 @@
     }
   },
   "scripts": {
-    "bump-version": "node scripts/bump-version.mjs",
     "build": "bunchee",
     "build:watch": "npm run build -- -w",
     "build:examples:counter-web-app": "cd examples/counter-web-app && vite build",
