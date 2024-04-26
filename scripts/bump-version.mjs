@@ -12,4 +12,3 @@ const { version } = require('../package.json');
 console.log(`Bumped to version "${version}"`);
 
 execSync(`git tag v${version} -m v${version}`, { stdio: 'inherit' });
-execSync('git push', { stdio: 'inherit' });
