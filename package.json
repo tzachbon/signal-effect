@@ -22,6 +22,7 @@
   "scripts": {
     "build": "bunchee",
     "build:watch": "npm run build -- -w",
+    "build:examples:counter-web-app": "cd examples/counter-web-app && vite build",
     "test": "vitest run",
     "test:watch": "vitest watch"
   },
@@ -54,6 +55,7 @@
     "jsdom": "^24.0.0",
     "signal-polyfill": "^0.1.0",
     "typescript": "^5.4.5",
+    "vite": "^5.2.0",
     "vitest": "^1.5.2"
   }
 }

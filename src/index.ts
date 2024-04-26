@@ -20,10 +20,9 @@ function handleWatchEmitted(): () => void {
   };
 }
 
-type DisposeCallback = (() => void) | void;
 
-export function effect(callback: () => DisposeCallback): () => void {
-  let disposeCallback: DisposeCallback;
+export function effect<DISPOSE_FN = () => void>(callback: () => DISPOSE_FN): () => void {
+  let disposeCallback: DISPOSE_FN;
 
   const computedSignal = new Signal.Computed(() => {
     if (typeof disposeCallback === 'function') {
