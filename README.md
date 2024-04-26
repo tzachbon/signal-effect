@@ -4,11 +4,13 @@ Simple effect method based on the [tc39/proposal-signals](https://github.com/tc3
 
 > Disclaimer: It uses "signal-polyfill" until the proposal is accepted and it is required
 
-## Usage
+## Install
 
 ```bash
 npm install --save signal-effect signal-polyfill
 ```
+
+## Usage
 
 ```js
 // polyfill for signal
