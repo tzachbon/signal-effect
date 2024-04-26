@@ -6,7 +6,11 @@ import { setupCounter } from './counter.ts';
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <div>
     <h1>Vite + TypeScript + Signals</h1>
+    <a href="https://github.com/tzachbon/signal-effect" target="_blank">GitHub</a>
+    |
+    <a href="https://www.npmjs.com/package/signal-effect" target="_blank">NPM</a>
     <div class="card">
+      <p>Click the button to increment the counter:</p>
       <button id="counter" type="button"></button>
       <pre>Here's the snippet for the counter:</pre>
     </div>
