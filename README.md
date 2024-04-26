@@ -4,7 +4,7 @@
 
 Simple `effect(() => {})` method based on the [tc39/proposal-signals](https://github.com/tc39/proposal-signals)
 
-> Disclaimer: It uses "signal-polyfill" until the proposal is accepted and it is required
+> Disclaimer: It uses "signal-polyfill" until the proposal is accepted and implemented in the browsers.
 
 ## Install
 
