@@ -28,8 +28,20 @@
     "tc39",
     "proposal"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Zach Bonfil",
+    "email": "tzachbonfil@gmail.com",
+    "url": "https://github.com/tzachbon"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tzachbon/signal-effect"
+  },
+  "homepage": "https://github.com/tzachbon/signal-effect",
+  "bugs": {
+    "url": "https://github.com/tzachbon/signal-effect/issues"
+  },
   "peerDependencies": {
     "signal-polyfill": "^0.1.0"
   },
