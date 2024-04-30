@@ -60,7 +60,7 @@ describe('effect', () => {
     expect(mockCallback).toHaveBeenCalledTimes(1);
   });
 
-  it('errors in the effect callback are caught', async () => {
+  it('errors in the effect callback are caught', () => {
     const mockCallback = vi.fn(() => {
       throw new Error('Test error');
     });

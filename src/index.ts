@@ -12,7 +12,7 @@ const watcher = new Signal.subtle.Watcher(() => {
 function handleWatchEmitted(): () => void {
   return () => {
     pending = false;
-    for (let pendingSignal of watcher.getPending()) {
+    for (const pendingSignal of watcher.getPending()) {
       pendingSignal.get();
     }
 
