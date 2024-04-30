@@ -22,6 +22,20 @@ describe('effect', () => {
     expect(mockCallback).toHaveBeenCalledTimes(2);
   });
 
+
+  it('not calling the effect when unrelated signals change', async () => {
+    const state = new Signal.State(0);
+    const unrelatedState = new Signal.State(0);
+    const mockCallback = vi.fn(() => state.get());
+
+    effect(mockCallback as () => void);
+    unrelatedState.set(1);
+
+    await waitForNextMicrotask();
+
+    expect(mockCallback).toHaveBeenCalledTimes(1);
+  })
+
   it('effect clean-up function is called on disposal', () => {
     const cleanup = vi.fn();
     const mockCallback = vi.fn(() => cleanup);
