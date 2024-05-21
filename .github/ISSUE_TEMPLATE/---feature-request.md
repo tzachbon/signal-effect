@@ -4,7 +4,6 @@ about: "I have a suggestion (and may want to implement it \U0001F642)!"
 title: ''
 labels: enhancement
 assignees: tzachbon
-
 ---
 
 <!---
@@ -18,20 +17,24 @@ Search open/closed issues before submitting since someone might have asked the s
 ### 😯 Current Behavior
 
 <!--- Tell us what is the current behavior that you would like to see changed -->
+
 ...
 
 ### 🤔 Expected Behavior
 
 <!--- Tell us how it should work -->
+
 ...
 
 ### 💁 Possible Solution <!-- optional -->
 
 <!--- Suggest ideas how to implement the addition or change -->
+
 ...
 
 ### 🔦 Context <!-- optional -->
 
 <!--- How has this issue affected you? What are you trying to accomplish?
       Providing context helps us come up with a solution that is most useful in the real world -->
+
 ...

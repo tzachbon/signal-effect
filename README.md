@@ -18,12 +18,11 @@ npm install --save signal-effect signal-polyfill
 // polyfill for signal
 import { Signal } from 'signal-polyfill';
 
-
-import { effect } from 'signal-effect'
+import { effect } from 'signal-effect';
 
 const counter = new Signal.State(0);
 
-effect(() => element.innerText = counter.get());
+effect(() => (element.innerText = counter.get()));
 
 // Simulate external updates to counter...
 setInterval(() => counter.set(counter.get() + 1), 1000);
