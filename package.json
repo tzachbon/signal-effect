@@ -54,7 +54,7 @@
   "devDependencies": {
     "@types/node": "^20.14.5",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
-    "@typescript-eslint/parser": "^7.13.1",
+    "@typescript-eslint/parser": "^7.15.0",
     "bunchee": "^5.2.1",
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^9.1.0",
