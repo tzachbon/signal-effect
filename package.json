@@ -52,7 +52,7 @@
     "signal-polyfill": "^0.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.9",
+    "@types/node": "^20.14.11",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.15.0",
     "bunchee": "^5.2.2",
