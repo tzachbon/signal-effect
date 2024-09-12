@@ -1,6 +1,6 @@
 {
   "name": "signal-effect",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple effect() method based on the tc39/proposal-signals",
   "sideEffects": false,
   "main": "dist/cjs/index.js",
